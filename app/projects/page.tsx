@@ -11,7 +11,12 @@ const fetchProjects = async () => {
 		const res = await fetch(
 			`${
 				process.env.NEXT_PUBLIC_HOST_URL || 'http://localhost:3000'
-			}/api/projects`
+			}/api/projects`,
+			{
+				next: {
+					revalidate: 600,
+				},
+			}
 		)
 		const data = await res.json()
 		return data
