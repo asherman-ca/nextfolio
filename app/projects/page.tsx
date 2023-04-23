@@ -6,6 +6,13 @@ export const metadata = {
 	description: 'Portfolio by Alex Sherman',
 }
 
+export async function getStaticProps() {
+	return {
+		props: {},
+		revalidate: 1, // You must include this revalidate key to prevent build errors
+	}
+}
+
 const fetchProjects = async () => {
 	const res = await fetch(
 		`${
