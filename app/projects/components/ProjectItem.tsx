@@ -10,7 +10,7 @@ const ProjectItem = ({ project }: { project: projectType }) => {
 			href={project.url}
 			target='_blank'
 			rel='noopener noreferrer'
-			className={`bg-white shadow-sm p-4 border border-gray-200 rounded-md flex flex-col gap-4 text-sm ${
+			className={`bg-white shadow-sm p-4 border border-gray-200 rounded-md flex flex-col gap-2 text-sm ${
 				!project.active && 'hover:cursor-not-allowed'
 			}`}
 		>
@@ -40,7 +40,14 @@ const ProjectItem = ({ project }: { project: projectType }) => {
 					)}
 				</div>
 			</div>
-			<div>{project.description}</div>
+			<div className='font-medium'>{project.description}</div>
+			<div className='flex flex-col gap-1'>
+				{project.items.map((item, idx) => (
+					<div key={`${project.id} idx`} className='text-xs text-gray-500'>
+						- {item}
+					</div>
+				))}
+			</div>
 		</a>
 	)
 }
