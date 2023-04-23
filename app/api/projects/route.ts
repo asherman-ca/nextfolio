@@ -47,7 +47,7 @@ export async function GET(request: Request) {
 			title: 'Miyagi',
 			framework: 'React',
 			url: 'https://miyagi.tech/',
-			description: 'This is the third project',
+			description: 'Social platform for discovering and sharing content',
 			tools: ['React', 'Firebase', 'Bootstrap'],
 			items: [
 				'Enabled content discovery with search features',
