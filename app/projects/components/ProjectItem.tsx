@@ -44,7 +44,7 @@ const ProjectItem = ({ project }: { project: projectType }) => {
 			<div className='flex flex-col gap-1'>
 				{project.items.map((item, idx) => (
 					<div key={`${project.id} idx`} className='text-xs text-gray-500'>
-						- {item}
+						{item}
 					</div>
 				))}
 			</div>
