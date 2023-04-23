@@ -6,18 +6,16 @@ export const metadata = {
 	description: 'Portfolio by Alex Sherman',
 }
 
-export async function getStaticProps() {
-	return {
-		props: {},
-		revalidate: 1, // You must include this revalidate key to prevent build errors
-	}
-}
-
 const fetchProjects = async () => {
 	const res = await fetch(
 		`${
 			process.env.NEXT_PUBLIC_HOST_URL || 'http://localhost:3000'
-		}/api/projects`
+		}/api/projects`,
+		{
+			next: {
+				revalidate: 10000000,
+			},
+		}
 	)
 	const data = await res.json()
 	return data
