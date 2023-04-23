@@ -22,5 +22,8 @@ export type workType = {
 export type eduType = {
 	id: number
 	title: string
+	degree: string
 	details: string[]
+	active: boolean
+	url: string
 }

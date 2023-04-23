@@ -22,16 +22,7 @@ const SubNav = () => {
 				}`}
 			>
 				<Link href={'/work'} className='navLink'>
-					Work
-				</Link>
-			</div>
-			<div
-				className={`pb-3 relative ${
-					pathname === '/education' && 'navLinkContainer'
-				}`}
-			>
-				<Link href={'/education'} className='navLink'>
-					Education
+					Experience
 				</Link>
 			</div>
 			<div className='pb-3'>
