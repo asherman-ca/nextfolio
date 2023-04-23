@@ -34,6 +34,26 @@ const SubNav = () => {
 					Education
 				</Link>
 			</div>
+			<div className='pb-3'>
+				<a
+					target='_blank'
+					rel='noopener noreferrer'
+					href='https://github.com/asherman-ca'
+					className='navLink'
+				>
+					Github
+				</a>
+			</div>
+			<div className='pb-3'>
+				<a
+					target='_blank'
+					rel='noopener noreferrer'
+					href='https://www.linkedin.com/in/alex-sherman-1ba03649/'
+					className='navLink'
+				>
+					LinkedIn
+				</a>
+			</div>
 		</div>
 	)
 }

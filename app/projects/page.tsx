@@ -14,7 +14,7 @@ const fetchProjects = async () => {
 
 const page = async () => {
 	const projectsResponse = await fetchProjects()
-	console.log(projectsResponse)
+
 	return (
 		<div className='layout'>
 			<ProjectTable projects={projectsResponse.projects} />

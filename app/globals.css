@@ -25,7 +25,7 @@ body {
 }
 
 .layout {
-	@apply flex flex-col px-12 py-8;
+	@apply flex flex-col px-32 py-8;
 }
 
 .navLinkContainer:before {
@@ -48,3 +48,21 @@ body {
 		)
 		rgb(var(--background-start-rgb));
 } */
+
+.table {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+	.table {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.table {
+		grid-template-columns: 1fr !important;
+	}
+}

@@ -30,9 +30,14 @@ const Nav = () => {
 					</span>
 				</div>
 				<div className='flex gap-4 text-sm items-center'>
-					<div className='text-gray-500 py-1 px-3 border border-gray-200 rounded-md hover:text-black hover:border-black cursor-pointer'>
+					<a
+						target='_blank'
+						rel='noopener noreferrer'
+						href='mailto: asherman.ca@gmail.com'
+						className='text-gray-500 py-1 px-3 border border-gray-200 rounded-md hover:text-black hover:border-black cursor-pointer'
+					>
 						Contact
-					</div>
+					</a>
 					<Image
 						src='/headshot.jpeg'
 						alt='headshot'
