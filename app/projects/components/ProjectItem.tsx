@@ -10,9 +10,9 @@ const ProjectItem = ({ project }: { project: projectType }) => {
 			href={project.url}
 			target='_blank'
 			rel='noopener noreferrer'
-			className={`bg-white shadow-sm p-4 border border-gray-200 rounded-md flex flex-col gap-2 text-sm ${
-				!project.active && 'hover:cursor-not-allowed'
-			}`}
+			className={`bg-white shadow-sm p-6 border border-gray-200 rounded-md flex flex-col gap-4 text-sm ${
+				project.active && 'hover:shadow-md transition-all duration-300'
+			} ${!project.active && 'hover:cursor-not-allowed'}`}
 		>
 			<div className='flex justify-between items-center'>
 				<div className='flex gap-2 items-center'>
