@@ -8,3 +8,19 @@ export type projectType = {
 	url: string
 	active: boolean
 }
+
+export type workType = {
+	id: number
+	company: string
+	title: string
+	url: string
+	items: string[]
+	type: string
+	active: boolean
+}
+
+export type eduType = {
+	id: number
+	title: string
+	details: string[]
+}

@@ -27,7 +27,7 @@ const ProjectTable = ({ projects }: { projects: projectType[] }) => {
 			<div className='table'>
 				{filteredProjects.length > 0 &&
 					filteredProjects.map((project) => (
-						<ProjectItem key={project.id} project={project} />
+						<ProjectItem key={`project ${project.id}`} project={project} />
 					))}
 			</div>
 		</div>
