@@ -42,7 +42,13 @@ const page = async () => {
 
 	return (
 		<div className='layout'>
-			<div className='text-4xl pt-4 pb-8'>Experience</div>
+			<div className='pt-4 pb-8 flex flex-col gap-2'>
+				<span className='text-4xl '>Experience</span>
+				<span className='text-gray-500'>
+					Javascript, Node.js, React, Next, Express, SQL, NoSQL, Prisma, tRPC,
+					GraphQL, CSS, TailwindCSS
+				</span>
+			</div>
 			<WorkTable work={workResponse.work} />
 			<div className='text-4xl py-8'>Education</div>
 			<EduTable edu={eduResponse.edu} />
