@@ -21,7 +21,18 @@ body {
 }
 
 .navLink {
-	@apply py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200 hover:text-black;
+	@apply py-2 px-3 rounded-md text-gray-500 hover:bg-gray-100 hover:text-black;
+}
+
+.navLinkContainer:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: translateX(10%);
+	height: 1px;
+	width: 80%;
+	border-bottom: 2px solid black;
 }
 
 /* body {

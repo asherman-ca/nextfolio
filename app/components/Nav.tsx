@@ -25,7 +25,7 @@ const Nav = () => {
 						className='rounded-full'
 					/>
 					asherman-ca
-					<span className='py-[2px] px-2 text-white bg-black rounded-full'>
+					<span className='py-[2px] px-3 text-white bg-black rounded-full'>
 						Pro
 					</span>
 				</div>
