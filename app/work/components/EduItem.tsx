@@ -8,7 +8,7 @@ const EduItem = ({ edu }: { edu: eduType }) => {
 			href={edu.url}
 			target='_blank'
 			rel='noopener noreferrer'
-			className={`bg-white shadow-sm p-6 border border-gray-200 rounded-md flex flex-col gap-4 text-sm ${
+			className={`bg-white shadow-sm px-8 py-6 border border-gray-200 rounded-md flex flex-col gap-4 text-sm ${
 				edu.active && 'hover:shadow-md transition-all duration-300'
 			} ${!edu.active && 'hover:cursor-not-allowed'}`}
 		>
@@ -19,11 +19,11 @@ const EduItem = ({ edu }: { edu: eduType }) => {
 					<span className='text-gray-500'>{edu.degree}</span>
 				</div>
 			</div>
-			<div className='text-gray-500 gap-1 flex flex-col text-xs'>
+			<ul className='text-gray-500 gap-1 flex flex-col text-xs list-disc'>
 				{edu.details.map((item, idx) => {
-					return <div key={`item ${idx}`}>{item}</div>
+					return <li key={`item ${idx}`}>{item}</li>
 				})}
-			</div>
+			</ul>
 		</a>
 	)
 }

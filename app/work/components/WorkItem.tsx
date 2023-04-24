@@ -7,7 +7,7 @@ const WorkItem = ({ work }: { work: workType }) => {
 			href={work.url}
 			target='_blank'
 			rel='noopener noreferrer'
-			className={`bg-white shadow-sm p-6 border border-gray-200 rounded-md flex flex-col gap-4 text-sm ${
+			className={`bg-white shadow-sm px-8 py-6 border border-gray-200 rounded-md flex flex-col gap-4 text-sm ${
 				work.active && 'hover:shadow-md transition-all duration-300'
 			} ${!work.active && 'hover:cursor-not-allowed'}`}
 		>
@@ -18,11 +18,11 @@ const WorkItem = ({ work }: { work: workType }) => {
 					<span className='text-gray-500'>{work.title}</span>
 				</div>
 			</div>
-			<div className='text-gray-500 gap-1 flex flex-col text-xs'>
+			<ul className='text-gray-500 gap-1 flex flex-col text-xs list-disc'>
 				{work.items.map((item, idx) => {
-					return <div key={`item ${idx}`}>{item}</div>
+					return <li key={`item ${idx}`}>-{item}</li>
 				})}
-			</div>
+			</ul>
 		</a>
 	)
 }

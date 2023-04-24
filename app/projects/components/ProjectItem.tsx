@@ -10,7 +10,7 @@ const ProjectItem = ({ project }: { project: projectType }) => {
 			href={project.url}
 			target='_blank'
 			rel='noopener noreferrer'
-			className={`bg-white shadow-sm p-6 border border-gray-200 rounded-md flex flex-col gap-4 text-sm ${
+			className={`bg-white shadow-sm px-8 py-6 border border-gray-200 rounded-md flex flex-col gap-4 text-sm ${
 				project.active && 'hover:shadow-md transition-all duration-300'
 			} ${!project.active && 'hover:cursor-not-allowed'}`}
 		>
@@ -41,13 +41,13 @@ const ProjectItem = ({ project }: { project: projectType }) => {
 				</div>
 			</div>
 			<div className='font-medium'>{project.description}</div>
-			<div className='flex flex-col gap-1'>
-				{project.items.map((item, idx) => (
-					<div key={`${project.id} idx`} className='text-xs text-gray-500'>
+			<ul className='flex flex-col gap-1 list-disc'>
+				{project.items.map((item) => (
+					<li key={`project ${project.id}`} className='text-xs text-gray-500'>
 						{item}
-					</div>
+					</li>
 				))}
-			</div>
+			</ul>
 		</a>
 	)
 }

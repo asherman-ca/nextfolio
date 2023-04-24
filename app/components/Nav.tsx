@@ -6,7 +6,7 @@ const Nav = () => {
 	return (
 		<div className='flex flex-col bg-white border-b border-gray-200 pt-4 gap-4'>
 			<div className='flex justify-between px-8'>
-				<div className='flex gap-4 items-center text-sm'>
+				<div className='hidden sm:flex gap-4 items-center text-sm'>
 					<svg
 						aria-label='Vercel Logo'
 						fill='var(--geist-foreground)'
