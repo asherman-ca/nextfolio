@@ -20,7 +20,7 @@ const WorkItem = ({ work }: { work: workType }) => {
 			</div>
 			<ul className='text-gray-500 gap-1 flex flex-col text-xs list-disc'>
 				{work.items.map((item, idx) => {
-					return <li key={`item ${idx}`}>-{item}</li>
+					return <li key={`item ${idx}`}>{item}</li>
 				})}
 			</ul>
 		</a>
