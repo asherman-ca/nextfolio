@@ -2,10 +2,15 @@ import { projectType } from '@/app/util/types'
 import { FaReact } from 'react-icons/fa'
 import { RiPulseLine } from 'react-icons/ri'
 import { HiOutlineStatusOffline } from 'react-icons/hi'
+import { motion } from 'framer-motion'
 
 const ProjectItem = ({ project }: { project: projectType }) => {
 	return (
-		<a
+		<motion.a
+			layout
+			animate={{ opacity: 1 }}
+			initial={{ opacity: 0 }}
+			exit={{ opacity: 0 }}
 			key={project.id}
 			href={project.url}
 			target='_blank'
@@ -48,7 +53,7 @@ const ProjectItem = ({ project }: { project: projectType }) => {
 					</li>
 				))}
 			</ul>
-		</a>
+		</motion.a>
 	)
 }
 
