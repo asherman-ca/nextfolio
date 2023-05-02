@@ -37,6 +37,7 @@ body {
 	height: 1px;
 	width: 80%;
 	border-bottom: 2px solid black;
+	animation: borderSlide 0.3s ease-in-out;
 }
 
 /* body {
@@ -53,6 +54,16 @@ body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 24px;
+}
+
+/* border animation */
+@keyframes borderSlide {
+	0% {
+		transform: translateX(-10%);
+	}
+	100% {
+		transform: translateX(10%);
+	}
 }
 
 @media screen and (max-width: 1200px) {
