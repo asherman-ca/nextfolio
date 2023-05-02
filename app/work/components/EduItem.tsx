@@ -1,10 +1,14 @@
+'use client'
 import { eduType } from '@/app/util/types'
 import { MdOutlineSchool } from 'react-icons/md'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const EduItem = ({ edu }: { edu: eduType }) => {
 	return (
-		<a
+		<motion.a
+			animate={{ opacity: 1 }}
+			initial={{ opacity: 0 }}
 			href={edu.url}
 			target='_blank'
 			rel='noopener noreferrer'
@@ -24,7 +28,7 @@ const EduItem = ({ edu }: { edu: eduType }) => {
 					return <li key={`item ${idx}`}>{item}</li>
 				})}
 			</ul>
-		</a>
+		</motion.a>
 	)
 }
 

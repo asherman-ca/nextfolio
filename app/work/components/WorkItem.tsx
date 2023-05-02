@@ -1,9 +1,13 @@
+'use client'
 import { workType } from '@/app/util/types'
 import { BsCodeSlash } from 'react-icons/bs'
+import { motion } from 'framer-motion'
 
 const WorkItem = ({ work }: { work: workType }) => {
 	return (
-		<a
+		<motion.a
+			animate={{ opacity: 1 }}
+			initial={{ opacity: 0 }}
 			href={work.url}
 			target='_blank'
 			rel='noopener noreferrer'
@@ -23,7 +27,7 @@ const WorkItem = ({ work }: { work: workType }) => {
 					return <li key={`item ${idx}`}>{item}</li>
 				})}
 			</ul>
-		</a>
+		</motion.a>
 	)
 }
 
