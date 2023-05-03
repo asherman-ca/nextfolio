@@ -31,10 +31,10 @@ body {
 .navLinkContainer:before {
 	content: '';
 	position: absolute;
-	left: 0;
+	left: 10%;
 	bottom: 0;
-	transform: translateX(10%);
-	height: 1px;
+	/* transform: translateX(10%); */
+	/* height: 1px; */
 	width: 80%;
 	border-bottom: 2px solid black;
 	animation: borderSlide 0.3s ease-in-out;
@@ -59,10 +59,10 @@ body {
 /* border animation */
 @keyframes borderSlide {
 	0% {
-		transform: translateX(-10%);
+		transform: translateX(-20%);
 	}
 	100% {
-		transform: translateX(10%);
+		transform: translateX(0);
 	}
 }
 
