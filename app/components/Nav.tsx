@@ -20,7 +20,7 @@ const Nav = () => {
 					>
 						<path d='M37.59.25l36.95 64H.64l36.95-64z'></path>
 					</svg>
-					<span className='text-gray-200 text-2xl'>/</span>
+					<span className='text-gray-200 text-2xl dark:text-dark_font'>/</span>
 					<Image
 						src='/headshot.jpeg'
 						alt='headshot'
@@ -29,7 +29,7 @@ const Nav = () => {
 						className='rounded-full'
 					/>
 					asherman-ca
-					<span className='py-[2px] px-3 text-white bg-black rounded-full dark:bg-[#1f1f1f]'>
+					<span className='py-[2px] px-3 text-white bg-black rounded-full dark:bg-dark_hover dark:text-dark_font'>
 						Pro
 					</span>
 				</div>

@@ -24,7 +24,7 @@ const page = async () => {
 	const projectsResponse = await fetchProjects()
 
 	return (
-		<div className='layout'>
+		<div className='layout flex-1'>
 			<ProjectTable projects={projectsResponse.projects} />
 		</div>
 	)

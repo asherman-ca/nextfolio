@@ -20,7 +20,9 @@ export default function RootLayout({
 			<body className={inter.className}>
 				<Hydrate>
 					<Nav />
-					<div className='px-8 dark:bg-black'>{children}</div>
+					<div className='px-8 dark:bg-dark_bg flex flex-col flex-1'>
+						{children}
+					</div>
 				</Hydrate>
 			</body>
 		</html>

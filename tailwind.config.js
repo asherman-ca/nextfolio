@@ -8,10 +8,11 @@ module.exports = {
 	darkMode: 'class',
 	theme: {
 		extend: {
-			backgroundImage: {
-				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'gradient-conic':
-					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+			colors: {
+				dark_hover: '#1f1f1f',
+				dark_font: '#888',
+				dark_bg: '#111111',
+				dark_bg2: '#000000',
 			},
 		},
 	},

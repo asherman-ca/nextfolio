@@ -15,7 +15,7 @@ const ProjectItem = ({ project }: { project: projectType }) => {
 			href={project.url}
 			target='_blank'
 			rel='noopener noreferrer'
-			className={`bg-white shadow-sm px-8 py-6 border border-gray-200 rounded-md flex flex-col gap-4 text-sm ${
+			className={`bg-white dark:bg-black dark:border-gray-700 dark:text-dark_font shadow-sm px-8 py-6 border border-gray-200 rounded-md flex flex-col gap-4 text-sm ${
 				project.active && 'hover:shadow-md transition-all duration-300'
 			} ${!project.active && 'hover:cursor-not-allowed'}`}
 		>
@@ -25,7 +25,7 @@ const ProjectItem = ({ project }: { project: projectType }) => {
 						<FaReact size={'32px'} color={'#95E8FE'} />
 					)}
 					<div className='flex flex-col gap-[2px]'>
-						<span className='font-medium'>{project.title}</span>
+						<span className='font-medium dark:text-white'>{project.title}</span>
 						<span className='text-gray-500'>{project.url}</span>
 					</div>
 				</div>
@@ -34,13 +34,13 @@ const ProjectItem = ({ project }: { project: projectType }) => {
 						<RiPulseLine
 							size={'32px'}
 							color={'gray'}
-							className='border border-gray-200 rounded-full p-1'
+							className='border border-gray-200 rounded-full p-1 dark:fill-white'
 						/>
 					) : (
 						<HiOutlineStatusOffline
 							size={'32px'}
 							color={'gray'}
-							className='border border-gray-200 rounded-full p-1'
+							className='border border-gray-200 rounded-full p-1 dark:fill-white'
 						/>
 					)}
 				</div>

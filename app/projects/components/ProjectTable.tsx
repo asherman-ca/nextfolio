@@ -14,14 +14,14 @@ const ProjectTable = ({ projects }: { projects: projectType[] }) => {
 	}, [search])
 
 	return (
-		<div className='flex flex-col gap-4'>
-			<div className='w-full border-[1px] border-gray-200 bg-white h-10 rounded-lg text-sm px-2 flex items-center gap-2'>
+		<div className='flex flex-col gap-4 flex-1'>
+			<div className='w-full border-[1px] border-gray-200 bg-white h-10 rounded-lg text-sm px-2 flex items-center gap-2 dark:bg-dark_bg dark:border-gray-700'>
 				<HiMagnifyingGlass size={'20px'} color={'gray'} />
 				<input
 					onChange={(e) => setSearch(e.target.value)}
 					placeholder='Search...'
 					type='text'
-					className='w-full focus:outline-none'
+					className='w-full focus:outline-none dark:bg-dark_bg dark:text-white'
 				/>
 			</div>
 			<div className='table'>
