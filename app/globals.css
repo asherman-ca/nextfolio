@@ -24,7 +24,7 @@ body {
 }
 
 .navLink {
-	@apply py-2 px-3 rounded-md text-gray-500 hover:bg-gray-100 hover:text-black dark:text-dark_font dark:hover:bg-dark_hover;
+	@apply py-2 px-3 rounded-md text-gray-500 hover:bg-gray-100 hover:text-black dark:text-dark_font dark:hover:bg-dark_hover dark:hover:text-white;
 }
 
 .layout {

@@ -1,12 +1,22 @@
 'use client'
-import React from 'react'
+// import React from 'react'
+import { useEffect } from 'react'
 import Image from 'next/image'
 import SubNav from './SubNav'
 import useDarkMode from '../hooks/useDarkMode'
+import { BiSun, BiMoon } from 'react-icons/bi'
+import { motion } from 'framer-motion'
 
 const Nav = () => {
 	const [darkTheme, setDarkTheme] = useDarkMode()
 	const handleMode = () => setDarkTheme(!darkTheme)
+
+	useEffect(() => {
+		if (darkTheme === undefined) {
+			setDarkTheme(true)
+		}
+	}, [darkTheme])
+
 	return (
 		<div className='flex flex-col bg-white border-b border-gray-200 pt-4 gap-4 dark:border-gray-700 dark:bg-black dark:text-white'>
 			<div className='flex justify-between px-8'>
@@ -38,11 +48,27 @@ const Nav = () => {
 						target='_blank'
 						rel='noopener noreferrer'
 						href='mailto: asherman.ca@gmail.com'
-						className='text-gray-500 py-1 px-3 border border-gray-200 rounded-md hover:text-black hover:border-black cursor-pointer'
+						className='text-gray-500 py-1 px-3 border border-gray-200 rounded-md hover:text-black hover:border-black cursor-pointer dark:border-gray-700 dark:text-dark_font dark:hover:text-white dark:hover:border-white'
 					>
 						Contact
 					</a>
-					<button onClick={() => handleMode()}>Dark</button>
+					{!darkTheme ? (
+						<motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
+							<BiMoon
+								onClick={() => handleMode()}
+								className='cursor-pointer'
+								size={'24px'}
+							/>
+						</motion.div>
+					) : (
+						<motion.div animate={{ opacity: 1, fill: 'white' }}>
+							<BiSun
+								onClick={() => handleMode()}
+								className='cursor-pointer'
+								size={'24px'}
+							/>
+						</motion.div>
+					)}
 					<Image
 						src='/headshot.jpeg'
 						alt='headshot'
