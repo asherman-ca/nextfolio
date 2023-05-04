@@ -1,18 +1,22 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import SubNav from './SubNav'
+import useDarkMode from '../hooks/useDarkMode'
 
 const Nav = () => {
+	const [darkTheme, setDarkTheme] = useDarkMode()
+	const handleMode = () => setDarkTheme(!darkTheme)
 	return (
-		<div className='flex flex-col bg-white border-b border-gray-200 pt-4 gap-4'>
+		<div className='flex flex-col bg-white border-b border-gray-200 pt-4 gap-4 dark:border-gray-700 dark:bg-black dark:text-white'>
 			<div className='flex justify-between px-8'>
 				<div className='hidden sm:flex gap-4 items-center text-sm'>
 					<svg
 						aria-label='Vercel Logo'
-						fill='var(--geist-foreground)'
 						viewBox='0 0 75 65'
 						height='26'
 						data-testid='dashboard/logo'
+						className='dark:fill-white'
 					>
 						<path d='M37.59.25l36.95 64H.64l36.95-64z'></path>
 					</svg>
@@ -25,7 +29,7 @@ const Nav = () => {
 						className='rounded-full'
 					/>
 					asherman-ca
-					<span className='py-[2px] px-3 text-white bg-black rounded-full'>
+					<span className='py-[2px] px-3 text-white bg-black rounded-full dark:bg-[#1f1f1f]'>
 						Pro
 					</span>
 				</div>
@@ -38,6 +42,7 @@ const Nav = () => {
 					>
 						Contact
 					</a>
+					<button onClick={() => handleMode()}>Dark</button>
 					<Image
 						src='/headshot.jpeg'
 						alt='headshot'

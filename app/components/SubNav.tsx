@@ -1,17 +1,16 @@
 'use client'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 
 const SubNav = () => {
 	const pathname = usePathname()
 
 	return (
-		<div className='text-sm flex items-center px-5'>
+		<div className='text-sm flex items-center px-5 dark:bg-black dark:text-white'>
 			<div
 				className={`pb-3 relative ${
 					pathname === '/projects' && 'navLinkContainer'
-				}`}
+				} dark:border-white`}
 			>
 				<Link href={'/projects'} className='navLink'>
 					Projects
@@ -20,7 +19,7 @@ const SubNav = () => {
 			<div
 				className={`pb-3 relative ${
 					pathname === '/work' && 'navLinkContainer'
-				}`}
+				} dark:border-white`}
 			>
 				<Link href={'/work'} className='navLink'>
 					Experience

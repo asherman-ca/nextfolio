@@ -21,7 +21,7 @@ body {
 }
 
 .navLink {
-	@apply py-2 px-3 rounded-md text-gray-500 hover:bg-gray-100 hover:text-black;
+	@apply py-2 px-3 rounded-md text-gray-500 hover:bg-gray-100 hover:text-black dark:text-white dark:hover:bg-[#1f1f1f];
 }
 
 .layout {
@@ -36,7 +36,7 @@ body {
 	/* transform: translateX(10%); */
 	/* height: 1px; */
 	width: 80%;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid;
 	animation: borderSlide 0.3s ease-in-out;
 }
 
