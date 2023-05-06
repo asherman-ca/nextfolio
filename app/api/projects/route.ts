@@ -58,6 +58,21 @@ export async function GET(request: Request) {
 			active: true,
 		},
 		{
+			id: 6,
+			title: 'BuzzThing',
+			framework: 'React',
+			url: 'https://github.com/asherman-ca/infinilist',
+			tools: ['React', 'Next.js', 'OpenAI', 'Pexels'],
+			description: 'A generative site of entertaining listicles',
+			items: [
+				"Use OpenAI's GPT-3.5 model to generate consumable listicle content",
+				'dynamic and efficient image queries to Pexels API to provide relevant images',
+				'static site generation to improve performance, SEO and prevent unbound API expedeniture',
+				'unhosted to due to cost of GPT-3.5 API and vercel hosting limitations',
+			],
+			active: true,
+		},
+		{
 			id: 4,
 			title: 'MyOnlinePool',
 			framework: 'React',
