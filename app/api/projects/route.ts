@@ -3,6 +3,29 @@ import { NextResponse } from 'next/server'
 export async function GET(request: Request) {
 	const projectsArray = [
 		{
+			id: 7,
+			title: 'JobThing',
+			framework: 'React',
+			url: 'https://job-thing.vercel.app/',
+			tools: [
+				'React',
+				'Next.js',
+				'TypeScript',
+				'Prisma',
+				'PostgreSQL',
+				'TailwindCSS',
+			],
+			items: [
+				'100% Server Rendering for SEO and performance',
+				'Full Next 13.4 utilization with 100% server component fetching/mutation',
+				'Organizes job applications by job search and application status',
+				'Handrolled modern ui components on top of Tailwind utility classes',
+				'Subtle animations for optimal UX',
+			],
+			description: 'A crypto ticker and testnet trading simulator',
+			active: true,
+		},
+		{
 			id: 1,
 			title: 'Tickr3',
 			framework: 'React',
