@@ -22,7 +22,7 @@ export async function GET(request: Request) {
 				'Handrolled modern ui components on top of Tailwind utility classes',
 				'Subtle animations for optimal UX',
 			],
-			description: 'A crypto ticker and testnet trading simulator',
+			description: 'A job application tracker',
 			active: true,
 		},
 		{
