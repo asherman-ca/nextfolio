@@ -26,7 +26,9 @@ const ProjectItem = ({ project }: { project: projectType }) => {
 					)}
 					<div className='flex flex-col gap-[2px]'>
 						<span className='font-medium dark:text-white'>{project.title}</span>
-						<span className='text-gray-500'>{project.url}</span>
+						<span className='text-gray-500 dark:text-dark_font'>
+							{project.url}
+						</span>
 					</div>
 				</div>
 				<div>
@@ -45,10 +47,15 @@ const ProjectItem = ({ project }: { project: projectType }) => {
 					)}
 				</div>
 			</div>
-			<div className='font-medium'>{project.description}</div>
-			<ul className='flex flex-col gap-1 list-disc'>
+			<div className='font-medium dark:text-dark_font'>
+				{project.description}
+			</div>
+			<ul className='flex flex-col gap-1 list-disc '>
 				{project.items.map((item) => (
-					<li key={`project ${project.id}`} className='text-xs text-gray-500'>
+					<li
+						key={`project ${project.id}`}
+						className='text-xs text-gray-500 dark:text-dark_font'
+					>
 						{item}
 					</li>
 				))}

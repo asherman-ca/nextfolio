@@ -24,7 +24,9 @@ const EduItem = ({ edu }: { edu: eduType }) => {
 				/>
 				<div className='flex flex-col gap-[2px]'>
 					<span className='font-medium dark:text-white'>{edu.title}</span>
-					<span className='text-gray-500'>{edu.degree}</span>
+					<span className='text-gray-500 dark:text-dark_font'>
+						{edu.degree}
+					</span>
 				</div>
 			</div>
 			<ul className='text-gray-500 dark:text-dark_font gap-1 flex flex-col text-xs list-disc'>
