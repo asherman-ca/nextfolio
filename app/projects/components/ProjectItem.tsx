@@ -47,9 +47,7 @@ const ProjectItem = ({ project }: { project: projectType }) => {
 					)}
 				</div>
 			</div>
-			<div className='font-medium dark:text-dark_font'>
-				{project.description}
-			</div>
+			<div className='font-medium dark:text-white'>{project.description}</div>
 			<ul className='flex flex-col gap-1 list-disc '>
 				{project.items.map((item) => (
 					<li
