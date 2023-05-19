@@ -3,6 +3,39 @@ import { NextResponse } from 'next/server'
 export async function GET(request: Request) {
 	const projectsArray = [
 		{
+			id: 8,
+			title: 'Tickr4',
+			framework: 'React',
+			url: 'https://tickr4.vercel.app/',
+			tools: ['React', 'Next.js', 'NewsAPI', 'CoinGecko', 'NeonSQL'],
+			description:
+				'A crypto ticker, social network and testnet trading simulator',
+			items: [
+				'Accessed multiple public/free APIs to provide live data and news',
+				'Combined SSR and client side rendering to improve SEO and performance',
+				'Used incremental static regeneratiion on dynamic routes for optimal performance',
+				'Applied subtle animations for seemless UX',
+				'Handrolled modern ui components on top of Tailwind utility classes',
+				'Calculated realized and unrealized PNL stats using order history and live prices',
+			],
+			active: true,
+		},
+		{
+			id: 6,
+			title: 'BuzzThing',
+			framework: 'React',
+			url: 'https://github.com/asherman-ca/infinilist',
+			tools: ['React', 'Next.js', 'OpenAI', 'Pexels'],
+			description: 'A generative site of entertaining listicles',
+			items: [
+				"Use OpenAI's GPT-3.5 model to generate consumable listicle content",
+				'dynamic and efficient image queries to Pexels API to provide relevant images',
+				'static site generation to improve performance, SEO and prevent unbound API expedeniture',
+				'unhosted to due to cost of GPT-3.5 API and vercel hosting limitations',
+			],
+			active: true,
+		},
+		{
 			id: 7,
 			title: 'JobThing',
 			framework: 'React',
@@ -77,21 +110,6 @@ export async function GET(request: Request) {
 				`Provided content interaction with 'like' and 'follow' features`,
 				'Enriched post content with YouTube and Instagram embedding',
 				'Structured css to allow seamless cross-platform UX',
-			],
-			active: true,
-		},
-		{
-			id: 6,
-			title: 'BuzzThing',
-			framework: 'React',
-			url: 'https://github.com/asherman-ca/infinilist',
-			tools: ['React', 'Next.js', 'OpenAI', 'Pexels'],
-			description: 'A generative site of entertaining listicles',
-			items: [
-				"Use OpenAI's GPT-3.5 model to generate consumable listicle content",
-				'dynamic and efficient image queries to Pexels API to provide relevant images',
-				'static site generation to improve performance, SEO and prevent unbound API expedeniture',
-				'unhosted to due to cost of GPT-3.5 API and vercel hosting limitations',
 			],
 			active: true,
 		},
