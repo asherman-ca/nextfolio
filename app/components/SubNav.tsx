@@ -9,10 +9,10 @@ const SubNav = () => {
 		<div className='text-sm flex items-center px-5 dark:bg-black dark:text-white'>
 			<div
 				className={`pb-3 relative ${
-					pathname === '/' && 'navLinkContainer'
+					pathname === '/projects' && 'navLinkContainer'
 				} dark:border-white`}
 			>
-				<Link href={'/'} className='navLink'>
+				<Link href={'/projects'} className='navLink'>
 					Projects
 				</Link>
 			</div>
