@@ -11,9 +11,9 @@ export async function GET(request: Request) {
 			description:
 				'A crypto ticker, social network and testnet trading simulator',
 			items: [
-				'Accessed multiple public/free APIs to provide live data and news',
 				'Combined SSR and client side rendering to improve SEO and performance',
 				'Used incremental static regeneratiion on dynamic routes for optimal performance',
+				'Accessed multiple public/free APIs to provide live data and news',
 				'Applied subtle animations for seemless UX',
 				'Handrolled modern ui components on top of Tailwind utility classes',
 				'Calculated realized and unrealized PNL stats using order history and live prices',
