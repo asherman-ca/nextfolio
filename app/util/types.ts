@@ -6,6 +6,7 @@ export type projectType = {
 	tools: string[]
 	items: string[]
 	url: string
+	github: string
 	active: boolean
 }
 

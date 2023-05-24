@@ -7,6 +7,7 @@ export async function GET(request: Request) {
 			title: 'Tickr4',
 			framework: 'React',
 			url: 'https://tickr4.vercel.app/',
+			github: 'https://github.com/asherman-ca/tickr4',
 			tools: ['React', 'Next.js', 'NewsAPI', 'CoinGecko', 'NeonSQL'],
 			description:
 				'A crypto ticker, social network and testnet trading simulator',
@@ -24,7 +25,8 @@ export async function GET(request: Request) {
 			id: 6,
 			title: 'BuzzThing',
 			framework: 'React',
-			url: 'https://github.com/asherman-ca/infinilist',
+			url: '',
+			github: 'https://github.com/asherman-ca/infinilist',
 			tools: ['React', 'Next.js', 'OpenAI', 'Pexels'],
 			description: 'A generative site of entertaining listicles',
 			items: [
@@ -33,13 +35,14 @@ export async function GET(request: Request) {
 				'static site generation to improve performance, SEO and prevent unbound API expedeniture',
 				'unhosted to due to cost of GPT-3.5 API and vercel hosting limitations',
 			],
-			active: true,
+			active: false,
 		},
 		{
 			id: 7,
 			title: 'JobThing',
 			framework: 'React',
 			url: 'https://job-thing.vercel.app/',
+			github: 'https://github.com/asherman-ca/jobThing',
 			tools: [
 				'React',
 				'Next.js',
@@ -63,6 +66,7 @@ export async function GET(request: Request) {
 			title: 'Tickr3',
 			framework: 'React',
 			url: 'https://tickr3.vercel.app/',
+			github: 'https://github.com/asherman-ca/tickr3',
 			tools: [
 				'React',
 				'Next.js',
@@ -87,6 +91,7 @@ export async function GET(request: Request) {
 			title: 'Tickr2',
 			framework: 'React',
 			url: 'https://tickr2.vercel.app/',
+			github: 'https://github.com/asherman-ca/tickr2',
 			description: 'A crypto ticker and testnet trading simulator',
 			tools: ['React', 'Firebase', 'TypeScript'],
 			items: [
@@ -103,6 +108,7 @@ export async function GET(request: Request) {
 			title: 'Miyagi',
 			framework: 'React',
 			url: 'https://miyagi.tech/',
+			github: 'https://github.com/asherman-ca/miyagi',
 			description: 'Social platform for discovering and sharing content',
 			tools: ['React', 'Firebase', 'Bootstrap'],
 			items: [
@@ -117,7 +123,8 @@ export async function GET(request: Request) {
 			id: 4,
 			title: 'MyOnlinePool',
 			framework: 'React',
-			url: 'https://www.google.com',
+			url: '',
+			github: 'https://github.com/davidhu2000/myonlinepool',
 			tools: ['React', 'Rails', 'SQL'],
 			description: 'Social platform for competitive NFL brackets',
 			items: [
@@ -131,7 +138,8 @@ export async function GET(request: Request) {
 			id: 5,
 			title: 'EZ Streaming',
 			framework: 'React',
-			url: 'https://www.google.com',
+			url: '',
+			github: 'https://github.com/davidhu2000/eezee',
 			tools: ['React-Native', 'Firebase'],
 			description: 'Live database for discovering streaming locations',
 			items: [
