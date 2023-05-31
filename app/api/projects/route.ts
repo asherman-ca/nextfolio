@@ -3,6 +3,25 @@ import { NextResponse } from 'next/server'
 export async function GET(request: Request) {
 	const projectsArray = [
 		{
+			id: 9,
+			title: 'Chonker',
+			framework: 'React',
+			url: 'https://chonker.vercel.app/',
+			github: 'https://github.com/asherman-ca/chonker',
+			tools: ['React', 'Next.js', 'Stable Diffusion', 'Replicate'],
+			description: 'An AI image generator to recolor your pet',
+			items: [
+				'Utilized Stable Diffusion and Replicate to generate images',
+				'Implimented token system to manage user access to AI model',
+				'Combined SSR and client side rendering to improve SEO and performance',
+				'Client side data caching using SWR for efficiency and dynamic invalidation',
+				'Accessed multiple web services for image hosting, AI modeling, data storage and hosting',
+				'Applied subtle animations for seemless UX',
+				'Handrolled modern ui components on top of Tailwind utility classes and HeadlessUI',
+			],
+			active: true,
+		},
+		{
 			id: 8,
 			title: 'Tickr4',
 			framework: 'React',
