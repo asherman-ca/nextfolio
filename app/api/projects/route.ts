@@ -3,7 +3,27 @@ import { NextResponse } from 'next/server'
 export async function GET(request: Request) {
 	const projectsArray = [
 		{
-			id: 9,
+			id: 10,
+			title: 'Supper',
+			framework: 'React',
+			url: 'https://supper-eta.vercel.app/',
+			github: 'https://github.com/asherman-ca/supper',
+			tools: ['React', 'Next.js', 'mySQL', 'TailwindCSS'],
+			description: 'A Job Search Tracker with AI CV Builder',
+			items: [
+				'SSR to improve SEO and performance',
+				'ReactQuery for efficient data fetching and caching',
+				'NextAuth for authentication and authorization',
+				'End to End type safety and consistency using Zod + TypeScript inference',
+				'OpenAi Vercel SDK for AI CV Builder',
+				'Edge function for optimal handling of OpenAi data stream',
+				'Subtle animations using Framer Motion for seemless UX',
+				'DaisyUI for rapid prototyping and TailwindCSS for custom styling',
+			],
+			active: true,
+		},
+		{
+			id: 10,
 			title: 'Chonkify',
 			framework: 'React',
 			url: 'https://chonkify.vercel.app/',
