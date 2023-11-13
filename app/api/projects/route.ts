@@ -3,7 +3,26 @@ import { NextResponse } from 'next/server'
 export async function GET(request: Request) {
 	const projectsArray = [
 		{
-			id: 10,
+			id: 12,
+			title: 'Liquify',
+			framework: 'React',
+			url: 'https://liquify-three.vercel.app/',
+			github: 'https://github.com/asherman-ca/liquify',
+			tools: ['React', 'Next.js', 'Supabase + Postgres', 'TailwindCSS'],
+			description: 'A Crypto-futures testnet trading simulator',
+			items: [
+				'Futures trading simulator with live data from public crypto API',
+				'SSR for SEO and inital page load performance',
+				'Live database-table subscriptions on client for post-SSR data fetching on update/insert/delete',
+				'Server side liquidation engine on short interval (cron) for trade validation',
+				'Watchlist (like) feature for tracking specific assets',
+				'Subtle animations using Framer Motion for seemless UX',
+				'Nextui for rapid prototyping and TailwindCSS for custom styling',
+			],
+			active: true,
+		},
+		{
+			id: 11,
 			title: 'Supper',
 			framework: 'React',
 			url: 'https://supper-eta.vercel.app/',
