@@ -3,6 +3,26 @@ import { NextResponse } from 'next/server'
 export async function GET(request: Request) {
 	const projectsArray = [
 		{
+			id: 13,
+			title: 'Soulsmith',
+			framework: 'React',
+			url: 'https://soulsmith.vercel.app/',
+			github: 'https://github.com/asherman-ca/soulsmith',
+			tools: ['React', 'Next.js', 'Supabase + Postgres', 'TailwindCSS'],
+			description:
+				'Social platform and gaming companion for Soulstone Survivors',
+			items: [
+				'Standard suite of social features - discovery, following, liking etc...',
+				'SSR for SEO and inital page load performance',
+				'Infinite scrolling & loading on discovery pages',
+				'Url param sorting to improve UX on tablular data pages when navigating',
+				'Robust relational database schema for optimal data storage and retrieval',
+				'Subtle animations using Framer Motion for seemless UX',
+				'Nextui for rapid prototyping and TailwindCSS for custom styling',
+			],
+			active: true,
+		},
+		{
 			id: 12,
 			title: 'Liquify',
 			framework: 'React',
