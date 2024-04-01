@@ -4,6 +4,24 @@ export async function GET(request: Request) {
 	const projectsArray = [
 		{
 			id: 13,
+			url: 'https://deeprockbuilds.vercel.app/',
+			title: 'Deep Rock Builds',
+			framework: 'React',
+			github: 'https://github.com/asherman-ca/deeprockbuilds',
+			tools: ['React', 'Next.js', 'Postgres', 'TailwindCSS'],
+			description: 'Build sharing platform for the game Deep Rock Galactic',
+			active: true,
+			items: [
+				'User authentication and authorization with NextAuth',
+				'Composable UI components utilized accross multiple pages',
+				'SSR for SEO and inital page load performance',
+				'Robust relational database schema for optimal data storage and retrieval',
+				'Subtle animations using tailwindcss for seemless UX',
+				'Responsive design to cater for ~50% mobile users',
+			],
+		},
+		{
+			id: 13,
 			title: 'Soulsmith',
 			framework: 'React',
 			url: 'https://soulsmith.vercel.app/',
