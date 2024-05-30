@@ -8,7 +8,7 @@ export async function GET(request: Request) {
 			title: 'Software Engineer',
 			url: 'https://www.candacecrowe.com/',
 			items: [
-				'Principle developer for headless CMS using on Next.js and Posgres',
+				'Principle developer for headless CMS build with Next.js and Posgres',
 				'Integrated API with third-party services for client data',
 				'Optimized website performance for mobile and desktop',
 				'Modern design patterns for scalable and maintainable codebase',
