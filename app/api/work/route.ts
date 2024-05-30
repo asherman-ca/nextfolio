@@ -4,6 +4,20 @@ export async function GET(request: Request) {
 	const workArray = [
 		{
 			id: 1,
+			company: 'Candace Crowe Design',
+			title: 'Software Engineer',
+			url: 'https://www.candacecrowe.com/',
+			items: [
+				'Principle developer for headless CMS using on Next.js and Posgres',
+				'Integrated API with third-party services for client data',
+				'Optimized website performance for mobile and desktop',
+				'Modern design patterns for scalable and maintainable codebase',
+			],
+			type: 'code',
+			active: true,
+		},
+		{
+			id: 2,
 			company: 'Nurx',
 			title: 'Software Engineer',
 			url: 'https://nurx.com/',
@@ -17,7 +31,7 @@ export async function GET(request: Request) {
 			active: true,
 		},
 		{
-			id: 2,
+			id: 3,
 			company: 'MyOnlinePool',
 			title: 'Freelance Developer',
 			url: 'https://www.google.com/',
@@ -30,7 +44,7 @@ export async function GET(request: Request) {
 			active: false,
 		},
 		{
-			id: 3,
+			id: 4,
 			company: 'App Academy',
 			title: 'Teaching Assistant',
 			url: 'https://www.appacademy.io/',
